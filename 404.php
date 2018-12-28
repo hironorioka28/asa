@@ -1,3 +1,3 @@
 <?php get_header(); ?>
-<h1>Not Found</h1>
+<p>Not Found</p>
 <?php get_footer(); ?>
