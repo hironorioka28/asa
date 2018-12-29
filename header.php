@@ -2,21 +2,32 @@
 <html <?php language_attributes(); ?>>
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0">
-  <link rel="profile" href="http://gmpg.org/xfn/11">
-  <meta name="format-detection" content="telephone=no">
-  <title><?php if (! is_front_page()): wp_title('ー', true, 'right'); endif; ?><?php bloginfo('name'); ?></title>
-  <?php if (! is_single()): ?>
-    <meta property="og:title" content="<?php if (! is_front_page()): wp_title('ー', true, 'right'); endif; ?><?php bloginfo('name'); ?>">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="">
-  <?php endif; ?>
   <?php wp_head(); ?>
 </head>
 <body <?php body_class('page'); ?>>
-  <header>
-    <h1>ここはヘッダー</h1>
-  </header>
+  <div class="page__content">
+    <header class="header">
+      <h1 class="header__title">鈴木啓 / ASA</h1>
+      <nav class="header__nav">
+        <ul class="header-nav-list">
+          <li class="header-nav-list__item">
+            <a class="header-nav-list__link" href="#">Home</a>
+          </li>
+          <li class="header-nav-list__item">
+            <a class="header-nav-list__link" href="#">News</a>
+          </li>
+          <li class="header-nav-list__item">
+            <a class="header-nav-list__link" href="#">About us</a>
+          </li>
+          <li class="header-nav-list__item">
+            <a class="header-nav-list__link" href="#">Recruit</a>
+          </li>
+          <li class="header-nav-list__item">
+            <a class="header-nav-list__link" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>

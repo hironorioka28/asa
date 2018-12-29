@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<div>
-  <h1>このサイトは ASA です</h1>
-</div>
+<main>
+</main>
 <?php get_footer(); ?>
