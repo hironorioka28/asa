@@ -1,0 +1,18 @@
+$bplist: (
+  "tablet": 768,
+  "pc": 1024
+);
+
+@mixin mq($bp: tablet) {
+  $width: 0;
+
+  @if type-of($bp) == number {
+    $width: $bp;
+  } @else {
+    $width: map-get($bplist, $bp);
+  }
+
+  @media screen and (min-width: $width + px) {
+    @content;
+  }
+}

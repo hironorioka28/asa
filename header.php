@@ -9,23 +9,25 @@
 <body <?php body_class('page'); ?>>
   <div class="page__content">
     <header class="header">
-      <h1 class="header__title">鈴木啓 / ASA</h1>
+      <h1 class="header__title">
+        <a class="header__link" href="/">鈴木啓 / ASA</a>
+      </h1>
       <nav class="header__nav">
         <ul class="header-nav-list">
-          <li class="header-nav-list__item">
-            <a class="header-nav-list__link" href="#">Home</a>
+          <li class="header-nav-list__item<? if (is_home()): ?> header-nav-list__item--active<? endif; ?>">
+            <a class="header-nav-list__link" href="/">Home</a>
           </li>
-          <li class="header-nav-list__item">
-            <a class="header-nav-list__link" href="#">News</a>
+          <li class="header-nav-list__item<? if (is_page('News')): ?> header-nav-list__item--active<? endif; ?>">
+            <a class="header-nav-list__link" href="/news">News</a>
           </li>
-          <li class="header-nav-list__item">
-            <a class="header-nav-list__link" href="#">About us</a>
+          <li class="header-nav-list__item<? if (is_page('About us')): ?> header-nav-list__item--active<? endif; ?>">
+            <a class="header-nav-list__link" href="/about">About us</a>
           </li>
-          <li class="header-nav-list__item">
-            <a class="header-nav-list__link" href="#">Recruit</a>
+          <li class="header-nav-list__item<? if (is_page('Recruit')): ?> header-nav-list__item--active<? endif; ?>">
+            <a class="header-nav-list__link" href="/recruit">Recruit</a>
           </li>
-          <li class="header-nav-list__item">
-            <a class="header-nav-list__link" href="#">Contact</a>
+          <li class="header-nav-list__item<? if (is_page('Contact')): ?> header-nav-list__item--active<? endif; ?>">
+            <a class="header-nav-list__link" href="/contact">Contact</a>
           </li>
         </ul>
       </nav>

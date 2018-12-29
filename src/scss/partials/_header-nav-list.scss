@@ -1,0 +1,17 @@
+.header-nav-list {
+  display: flex;
+  justify-content: space-between;
+  &__item {
+    &--active {
+      border-bottom: 1px solid $black-text;
+    }
+  }
+  &__link {
+    display: block;
+    font: {
+      size: 1.2rem;
+    }
+    color: $black-text;
+    letter-spacing: .08em;
+  }
+}

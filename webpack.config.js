@@ -1,6 +1,6 @@
 module.exports = {
   // メインとなる JavaScript ファイル (エントリーポイント)
-  entry: `./src/index.js`,
+  entry: `./src/js/index.js`,
 
   // ファイルの出力設定
   output: {
@@ -13,7 +13,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.scss/,
+        test: /\.scss$/,
         use: [
           'style-loader',
           {

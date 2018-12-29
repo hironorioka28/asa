@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP");
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  word-wrap: break-word;
+  font: {
+    family: "Noto Sans JP", "Hiragino Kaku Gothicd ProN", sans-serif;
+    size: 1.4rem;
+    weight: 400;
+  }
+  line-height: 2;
+  color: $black-text;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: $gray-d;
+  font-weight: 700;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  background-color: $white;
+  border: 1px solid $gray-d;
+  outline-color: rgba($gray-d, .4);
+}
+
+input {
+  [type="text"] {
+    width: 100%;
+    background-color: $white;
+    border: 1px solid $gray-d;
+    border-radius: 4px;
+    outline-color: rgba($gray-d, .4);
+  }
+}
+
+img {
+  vertical-align: text-bottom;
+}
