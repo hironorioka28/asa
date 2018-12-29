@@ -1,0 +1,11 @@
+.footer {
+  padding: 16px;
+  &__text {
+    text-align: center;
+    font: {
+      size: 1.2rem;
+    }
+    line-height: 1;
+    letter-spacing: .1em;
+  }
+}
