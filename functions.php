@@ -11,7 +11,6 @@ function add_files() {
   wp_deregister_script('jquery');
 
   // JavaScript 読み込み
-  wp_enqueue_script( 'vuejs', 'https://cdn.jsdelivr.net/npm/vue/dist/vue.js', [], '', true );
-  wp_enqueue_script( 'asa-script', get_template_directory_uri() . '/dist/main.js', array('vuejs'), '', true );
+  wp_enqueue_script( 'asa-script', get_template_directory_uri() . '/dist/main.js', [], '', true );
 }
 add_action( 'wp_enqueue_scripts', 'add_files' );
