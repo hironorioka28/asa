@@ -14,19 +14,19 @@
       </h1>
       <nav class="header__nav">
         <ul class="header-nav-list">
-          <li class="header-nav-list__item<? if (is_home()): ?> header-nav-list__item--active<? endif; ?>">
+          <li class="header-nav-list__item<?php if (is_home()): ?> header-nav-list__item--active<?php endif; ?>">
             <a class="header-nav-list__link" href="/">Home</a>
           </li>
-          <li class="header-nav-list__item<? if (is_page('News')): ?> header-nav-list__item--active<? endif; ?>">
+          <li class="header-nav-list__item<?php if (is_page('News')): ?> header-nav-list__item--active<?php endif; ?>">
             <a class="header-nav-list__link" href="/news">News</a>
           </li>
-          <li class="header-nav-list__item<? if (is_page('About us')): ?> header-nav-list__item--active<? endif; ?>">
+          <li class="header-nav-list__item<?php if (is_page('About us')): ?> header-nav-list__item--active<?php endif; ?>">
             <a class="header-nav-list__link" href="/about">About us</a>
           </li>
-          <li class="header-nav-list__item<? if (is_page('Recruit')): ?> header-nav-list__item--active<? endif; ?>">
+          <li class="header-nav-list__item<?php if (is_page('Recruit')): ?> header-nav-list__item--active<?php endif; ?>">
             <a class="header-nav-list__link" href="/recruit">Recruit</a>
           </li>
-          <li class="header-nav-list__item<? if (is_page('Contact')): ?> header-nav-list__item--active<? endif; ?>">
+          <li class="header-nav-list__item<?php if (is_page('Contact')): ?> header-nav-list__item--active<?php endif; ?>">
             <a class="header-nav-list__link" href="/contact">Contact</a>
           </li>
         </ul>

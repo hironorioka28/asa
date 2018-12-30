@@ -19,7 +19,7 @@ Template Name: About us
               <p class="profile-card__jobTitle">構造設計一級建築士</p>
             </div>
             <div class="profile-card__imgWrapper">
-              <img class="profile-card__img" src="<? echo get_template_directory_uri() ?>/src/img/profile_img.jpg" alt="profile_img">
+              <img class="profile-card__img" src="<?php echo get_template_directory_uri() ?>/src/img/profile_img.jpg" alt="profile_img">
             </div>
           </div>
         </div>
@@ -82,7 +82,7 @@ Template Name: About us
         </div>
         <div class="section__content">
           <div class="section__imgWrapper">
-            <img class="section__img" src="<? echo get_template_directory_uri() ?>/src/img/office.png" alt="office">
+            <img class="section__img" src="<?php echo get_template_directory_uri() ?>/src/img/office.png" alt="office">
           </div>
         </div>
       </section>

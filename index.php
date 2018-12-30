@@ -9,17 +9,17 @@
   <main class="main">
     <div class="main__content">
       <ul class="article-img-list">
-        <? if ($posts): ?>
-          <? foreach ($posts as $post): setup_postdata($post) ?>
+        <?php if ($posts): ?>
+          <?php foreach ($posts as $post): setup_postdata($post) ?>
             <li class="article-img-list__item">
-              <a class="article-img-list__link" href="<? the_permalink() ?>">
-                <? if (has_post_thumbnail()): ?>
-                  <? the_post_thumbnail('', array('class' => 'article-img-list__img')) ?>
-                <? endif;?>
+              <a class="article-img-list__link" href="<?php the_permalink() ?>">
+                <?php if (has_post_thumbnail()): ?>
+                  <?php the_post_thumbnail('', array('class' => 'article-img-list__img')) ?>
+                <?php endif;?>
               </a>
             </li>
-          <? endforeach; ?>
-        <? endif; ?>
+          <?php endforeach; ?>
+        <?php endif; ?>
       </ul>
     </div>
   </main>
