@@ -1,0 +1,13 @@
+.list {
+  padding-left: 20px;
+  list-style-type: disc;
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+    line-height: 1.5;
+    font: {
+      size: 1.2rem;
+    }
+  }
+}

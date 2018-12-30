@@ -1,0 +1,55 @@
+.article {
+  &__title {
+    margin-bottom: 24px;
+    font: {
+      size: 1.8rem;
+      weight: 700;
+    }
+    line-height: 1.5;
+  }
+  &__date {
+    font: {
+      size: 1.2rem;
+    }
+  }
+  &__titleLink {
+    color: $black-text;
+  }
+  &__content {
+    margin-bottom: 40px;
+  }
+  &__prevNext {
+    padding-top: 16px;
+    border-top: 1px solid $gray-m;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__prev,
+  &__next {
+    font: {
+      size: 1.2rem;
+      weight: 500;
+    }
+    color: $black-text;
+    line-height: 1;
+  }
+  &__prev::before,
+  &__next::after {
+      font: {
+        family: "Font Awesome 5 Free";
+        weight: 900;
+      }
+  }
+  &__prev {
+    &::before {
+      margin-right: 8px;
+      content: "\f104";
+    }
+  }
+  &__next {
+    &::after {
+      margin-left: 8px;
+      content: "\f105";
+    }
+  }
+}

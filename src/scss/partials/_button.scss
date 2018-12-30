@@ -1,0 +1,12 @@
+.button {
+  width: 200px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $black-text;
+  font: {
+    weight: 500;
+  }
+  color: $black-text;
+}

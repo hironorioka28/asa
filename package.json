@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/hironorioka28/asa#readme",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.6.3",
     "autoprefixer": "^9.4.3",
     "css-loader": "^2.1.0",
     "css-mqpacker": "^7.0.0",

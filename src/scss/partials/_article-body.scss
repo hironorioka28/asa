@@ -1,0 +1,116 @@
+.article-body {
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 16px;
+    line-height: 1.5;
+  }
+  h1 {
+    font: {
+      size: 2.8rem;
+      weight: 700;
+    }
+  }
+  h2 {
+    font: {
+      size: 2.4rem;
+      weight: 700;
+    }
+  }
+  h3 {
+    font: {
+      size: 2rem;
+      weight: 700;
+    }
+  }
+  h4 {
+    font: {
+      size: 1.8rem;
+      weight: 700;
+    }
+  }
+  h5 {
+    font: {
+      size: 1.6rem;
+      weight: 700;
+    }
+  }
+  h6 {
+    font: {
+      size: 1.4rem;
+      weight: 700;
+    }
+  }
+  p {
+    margin-bottom: 16px;
+    line-height: 2;
+  }
+  a {
+    color: $gray-d;
+  }
+  pre {
+    margin-bottom: 16px;
+    padding: 16px;
+    border: 1px solid $gray-m;
+  }
+  ul, ol {
+    margin-bottom: 16px;
+    padding-left: 20px;
+    > li {
+      font-size: 1.4rem;
+      line-height: 1.5;
+      > ul {
+        margin-bottom: 0;
+        list-style-type: circle;
+      }
+    }
+  }
+  ul {
+    list-style-type: disc;
+  }
+  ol {
+    list-style-type: decimal;
+  }
+  .wp-block-quote {
+    margin-bottom: 16px;
+    padding: 8px 8px 8px 32px;
+    border: 1px solid $gray-m;
+    position: relative;
+    &::before {
+      display: block;
+      content: "\00201d";
+      position: absolute;
+      top: -8px;
+      left: 8px;
+      font-size: 4rem;
+    }
+    > p {
+      font-style: italic;
+    }
+  }
+  .wp-block-image {
+    img {
+      margin: 0 -16px;
+      width: 100vw;
+      height: auto;
+      max-width: none; // override
+      @include mq() {
+        margin: 0;
+        width: 100%;
+      }
+    }
+    figcaption {
+      margin: 8px 0 16px 0;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      text-align: left; // override
+    }
+  }
+  hr {
+    margin-bottom: 16px;
+    border: 1px solid $gray-m;
+  }
+  iframe {
+    margin: 0 -16px;
+    width: calc(100% + 32px);
+    height: 320px;
+  }
+}

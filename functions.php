@@ -11,6 +11,9 @@ function add_files() {
   wp_deregister_script('jquery');
 
   // JavaScript 読み込み
-  wp_enqueue_script( 'asa-script', get_template_directory_uri() . '/dist/main.js', [], '', true );
+  wp_enqueue_script( 'asa-script', get_template_directory_uri() . '/dist/main.js', [], '', false );
 }
 add_action( 'wp_enqueue_scripts', 'add_files' );
+
+// アイキャッチ画像を有効にする。
+add_theme_support('post-thumbnails');

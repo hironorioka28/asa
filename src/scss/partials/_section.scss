@@ -15,10 +15,26 @@
   }
   &__content {
     &:not(:last-child) {
-      margin-bottom: 32px;
+      margin-bottom: 40px;
+    }
+    &--centering {
+      display: flex;
+      justify-content: center;
     }
   }
   &__imgWrapper {
     margin: 0 -16px;
+  }
+  &__img {
+    width: 100%;
+  }
+  &__listWrapper {
+    margin-bottom: 16px;
+  }
+  &__text {
+    margin-bottom: 16px;
+    font: {
+      size: 1.2rem;
+    }
   }
 }
