@@ -7,7 +7,7 @@
   <?php wp_head(); ?>
 </head>
 <body <?php body_class('page'); ?>>
-  <div class="page__content">
+  <section class="page__header">
     <header class="header">
       <h1 class="header__title">
         <a class="header__link" href="/">鈴木啓 / ASA</a>
@@ -32,4 +32,4 @@
         </ul>
       </nav>
     </header>
-  </div>
+  </section>

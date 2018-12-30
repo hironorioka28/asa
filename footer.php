@@ -1,8 +1,8 @@
-  <div class="page__content">
+  <section class="page__footer">
     <footer class="footer">
       <p class="footer__text">&copy; 鈴木啓 / ASA</p>
     </footer>
-  </div>
+  </section>
   <?php wp_footer(); ?>
 </body>
 </html>

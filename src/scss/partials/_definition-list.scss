@@ -1,0 +1,10 @@
+.definition-list {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  &__title,
+  &__data {
+    line-height: 1.5;
+  }
+}

@@ -1,0 +1,24 @@
+.section {
+  &__title {
+    margin-bottom: 32px;
+    line-height: 1.5;
+    font: {
+      size: 1.8rem;
+      weight: 700;
+    }
+    &--sub {
+      margin-bottom: 16px;
+      font: {
+        size: 1.4rem;
+      }
+    }
+  }
+  &__content {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+  &__imgWrapper {
+    margin: 0 -16px;
+  }
+}
