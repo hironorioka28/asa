@@ -11,6 +11,7 @@ $(function () {
       arg[k[0]] = k[1];
   }
   const id = arg.val;
+  console.log(id);
   $('#contact-select').val(decodeURIComponent(id));
   $('#contact-select').css('background', 'red');
 });
