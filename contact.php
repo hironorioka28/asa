@@ -30,7 +30,9 @@ Template Name: Contact
           <p class="section__text">東急田園都市線三軒茶屋駅より徒歩xx分</p>
         </div>
         <div class="section__imgWrapper">
-          aaa
+          <div class="google-map">
+            <iframe class="google-map__map" src="https://www.google.com/maps/d/embed?mid=1bgYTbrPGpXKOrS0LwmEQ6ZpqJN3xAH9z" width="640" height="480"></iframe>
+          </div>
         </div>
       </section>
     </div>
