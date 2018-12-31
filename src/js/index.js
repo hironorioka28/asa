@@ -12,5 +12,5 @@ $(function () {
   }
   const id = arg.val;
   $('#contact-select').val(decodeURIComponent(id));
-  $('#contact-select').val(id);
+  $('#contact-select').css('background', 'red');
 });
