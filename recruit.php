@@ -14,7 +14,7 @@ Template Name: Recruit
           <p class="section__text">ASAでは設計スタッフ・広報スタッフ・インターンを募集しています。</p>
         </div>
         <div class="section__content section__content--centering">
-          <a class="button" href="#">応募する</a>
+          <a class="button" href="/contact/?val=スタッフへの応募">応募する</a>
         </div>
         <h3 class="section__title section__title--sub">募集内容</h3>
         <div class="section__content">
@@ -91,7 +91,7 @@ Template Name: Recruit
 ああああああああああああああああああああああああああああ</p>
         </div>
         <div class="section__content section__content--centering">
-          <a class="button" href="#">その他お問い合わせ</a>
+          <a class="button" href="/contact/?val=その他のお問い合わせ">その他のお問い合わせ</a>
         </div>
       </section>
     </div>
