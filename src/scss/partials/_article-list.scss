@@ -1,0 +1,34 @@
+.article-list {
+  border-bottom: 1px solid  $gray-m;
+  &__item {
+    border-top: 1px solid $gray-m;
+  }
+  &__link {
+    display: block;
+    padding: 16px 0;
+  }
+  &__date {
+    margin-bottom: 16px;
+    font: {
+      size: 1.2rem;
+      weight: 400;
+    }
+    color: $black-text;
+    line-height: 1;
+  }
+  &__title {
+    font: {
+      weight: 500;
+    }
+    color: $black-text;
+    line-height: 1.5;
+  }
+  &__category {
+    margin-top: 8px;
+    line-height: 1;
+    font: {
+      size: 1.2rem;
+      weight: 400;
+    }
+  }
+}

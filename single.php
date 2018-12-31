@@ -20,12 +20,16 @@ $next_post = get_next_post(true);
       </div>
     <?php endwhile; endif; ?>
     <div class="article__content">
-      <div class="article__prevNext">
+      <div class="prev-next">
         <?php if (!empty($previous_post)): ?>
-          <a class="article__prev" href="<?php echo get_permalink($previous_post->ID); ?>">Prev</a>
+          <a class="prev-next__prev" href="<?php echo get_permalink($previous_post->ID); ?>">Prev</a>
+        <?php else: ?>
+          <div class="prev-next__empty"></div>
         <?php endif; ?>
         <?php if (!empty($next_post)): ?>
-          <a class="article__next" href="<?php echo get_permalink($next_post->ID); ?>">Next</a>
+          <a class="prev-next__next" href="<?php echo get_permalink($next_post->ID); ?>">Next</a>
+        <?php else: ?>
+          <div class="prev-next__empty"></div>
         <?php endif; ?>
       </div>
     </div>

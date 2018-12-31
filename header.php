@@ -18,7 +18,7 @@
           <li class="header-nav-list__item<?php if (is_home()): ?> header-nav-list__item--active<?php endif; ?>">
             <a class="header-nav-list__link" href="/">Home</a>
           </li>
-          <li class="header-nav-list__item<?php if (is_page('News')): ?> header-nav-list__item--active<?php endif; ?>">
+          <li class="header-nav-list__item<?php if (is_category('news')): ?> header-nav-list__item--active<?php endif; ?>">
             <a class="header-nav-list__link" href="/news">News</a>
           </li>
           <li class="header-nav-list__item<?php if (is_page('About us')): ?> header-nav-list__item--active<?php endif; ?>">
