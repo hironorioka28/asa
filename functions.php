@@ -14,3 +14,15 @@ add_action( 'wp_enqueue_scripts', 'add_files' );
 
 // アイキャッチ画像を有効にする。
 add_theme_support('post-thumbnails');
+
+register_sidebar(array(
+  'name' => 'Contact' ,
+  'id' => 'contact_form' ,
+  'before_widget' => '<div class="widget">',
+  'after_widget' => '</div>',
+  'before_title' => '<h3>',
+  'after_title' => '</h3>'
+));
+
+//ウィジェットでショートコードを使えるようにする
+add_filter('widget_text', 'do_shortcode');

@@ -16,7 +16,7 @@ Template Name: Contact
         </div>
         <div class="section__content">
           <div class="contact-form">
-            <?php echo do_shortcode('[contact-form-7 id="2211" title="inquiry"]') ?>
+            <?php dynamic_sidebar('contact_form') ?>
           </div>
         </div>
       </section>
