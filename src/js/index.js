@@ -12,4 +12,5 @@ $(function () {
   }
   const id = arg.val;
   $('#contact-select').val(decodeURIComponent(id));
+  $('#contact-select').val(id);
 });
