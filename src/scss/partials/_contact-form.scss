@@ -1,0 +1,37 @@
+.contact-form {
+  &__list {
+    margin-bottom: 40px;
+  }
+  &__buttonWrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    input {
+      margin: 8px;
+      padding: 0;
+      width: 200px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $black-text;
+      background-color: transparent;
+      font: {
+        size: 1.4rem;
+        weight: 500;
+      }
+      &.wpcf7c-btn-back {
+        border-color: $gray-d;
+        font: {
+          weight: 400;
+        }
+      }
+    }
+    .ajax-loader {
+      position: absolute;
+      top: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

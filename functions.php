@@ -7,9 +7,6 @@ function title_setup() {
 add_action( 'after_setup_theme', 'title_setup' );
 
 function add_files() {
-  // WordPress 本体の jquery.js を読み込まない
-  wp_deregister_script('jquery');
-
   // JavaScript 読み込み
   wp_enqueue_script( 'asa-script', get_template_directory_uri() . '/dist/main.js', [], '', false );
 }

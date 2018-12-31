@@ -13,10 +13,7 @@
             </li>
           <?php endwhile; ?>
         <?php else : ?>
-          <li class="article-list__item">
-            <h3>記事がありません</h3>
-            <p>表示する記事はありませんでした</p>
-          </li>
+          <li class="article-list__item">記事がありません</li>
         <?php endif; ?>
       </ul>
     </div>

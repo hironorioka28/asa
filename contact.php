@@ -14,6 +14,11 @@ Template Name: Contact
           <p class="section__text">以下のフォームより、お問い合わせください。担当者よりメールにてご連絡差し上げます。</p>
           <p class="section__text">当サイトにおいて取得した個人情報は守秘義務等を遵守し、目的外の利用や事業外の第三者に提供することはありません。</p>
         </div>
+        <div class="section__content">
+          <div class="contact-form">
+            <?php echo do_shortcode('[contact-form-7 id="2211" title="inquiry"]') ?>
+          </div>
+        </div>
       </section>
     </div>
     <div class="main__content">
