@@ -2,6 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include mq() {
+    justify-content: flex-start;
+  }
   &__name,
   &__nameEn,
   &__jobTitle {
@@ -9,6 +12,11 @@
   }
   &__name {
     font-weight: 700;
+    @include mq() {
+      font: {
+        size: 1.6rem;
+      }
+    }
   }
   &__nameEn {
     margin: 4px 0 16px;
@@ -16,11 +24,27 @@
       size: 1rem;
       weight: 500;
     }
+    @include mq() {
+      margin-top: 8px;
+      font: {
+        size: 1.4rem;
+      }
+    }
   }
   &__jobTitle {
     margin-top: 8px;
     font: {
       size: 1.2rem;
+    }
+    @include mq() {
+      font: {
+        size: 1.4rem;
+      }
+    }
+  }
+  &__nameWrapper {
+    @include mq() {
+      order: 2;
     }
   }
   &__imgWrapper {
@@ -28,6 +52,10 @@
     height: 100px;
     border-radius: 50%;
     overflow: hidden;
+    @include mq() {
+      margin-right: 24px;
+      order: 1;
+    }
   }
   &__img {
     width: 100%;

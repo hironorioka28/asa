@@ -9,8 +9,8 @@ Template Name: About us
 <section class="page__main">
   <main class="main">
     <div class="main__content">
-      <section class="section">
-        <div class="section__content">
+      <section class="section section--profile">
+        <div class="section__content section__content--profile">
           <div class="profile-card">
             <div class="profile-card__nameWrapper">
               <h2 class="profile-card__name">鈴木啓</h2>
@@ -23,8 +23,8 @@ Template Name: About us
             </div>
           </div>
         </div>
-        <h3 class="section__title section__title--sub">略歴</h3>
-        <div class="section__content">
+        <h3 class="section__title section__title--sub section__title--profile">略歴</h3>
+        <div class="section__content section__content--profile">
           <dl class="definition-list">
             <dt class="definition-list__title">1970年</dt>
             <dd class="definition-list__data">初芝電器産業株式会社入社</dd>
@@ -40,8 +40,8 @@ Template Name: About us
             <dd class="definition-list__data">初芝五洋ホールディングス株式会社（2010年1月 社名をTECOTに変更） 代表取締役社長</dd>
           </dl>
         </div>
-        <h3 class="section__title section__title--sub">受賞等</h3>
-        <div class="section__content">
+        <h3 class="section__title section__title--sub section__title--profile">受賞等</h3>
+        <div class="section__content section__content--profile">
           <dl class="definition-list">
             <dt class="definition-list__title">1953年</dt>
             <dd class="definition-list__data">日本芸術院賞</dd>
@@ -60,9 +60,9 @@ Template Name: About us
       </section>
     </div>
     <div class="main__content">
-      <section class="section">
-        <h2 class="section__title">会社概要</h2>
-        <div class="section__content">
+      <section class="section section--horizontal">
+        <h2 class="section__title section__title--horizontal">会社概要</h2>
+        <div class="section__content section__content--horizontal">
           <dl class="definition-list">
             <dt class="definition-list__title">名称</dt>
             <dd class="definition-list__data">鈴木啓 / ASA エーエスエーアソシエイツ</dd>
@@ -80,7 +80,7 @@ Template Name: About us
             <dd class="definition-list__data">建築物および付帯工作物の構造設計・監理，建築構造物に関する調査・研究</dd>
           </dl>
         </div>
-        <div class="section__content">
+        <div class="section__content section__content--horizontal">
           <div class="section__imgWrapper">
             <img class="section__img" src="<?php echo get_template_directory_uri() ?>/src/img/office.png" alt="office">
           </div>

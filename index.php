@@ -1,5 +1,6 @@
 <?php
   $arg = array(
+    'posts_per_page' => 50,
     'category_name' => 'works'
   );
   $posts = get_posts($arg);

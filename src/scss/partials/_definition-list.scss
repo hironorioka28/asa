@@ -9,5 +9,10 @@
     font: {
       size: 1.2rem;
     }
+    @include mq() {
+      font: {
+        size: 1.4rem;
+      }
+    }
   }
 }

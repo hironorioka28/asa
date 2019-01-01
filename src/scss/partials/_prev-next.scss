@@ -11,6 +11,11 @@
     }
     color: $black-text;
     line-height: 1;
+    @include mq() {
+      font: {
+        size: 1.4rem;
+      }
+    }
   }
   &__prev::before,
   &__next::after {

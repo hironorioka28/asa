@@ -22,16 +22,18 @@ Template Name: Contact
       </section>
     </div>
     <div class="main__content">
-      <section class="section">
-        <h2 class="section__title">アクセス</h2>
-        <div class="section__content">
+      <section class="section section--horizontal">
+        <h2 class="section__title section__title--horizontal">アクセス</h2>
+        <div class="section__content section__content--horizontal">
           <p class="section__text">鈴木啓 / ASA エーエスエーアソシエイツ</p>
           <p class="section__text">〒xxx-xxxx<br>東京都世田谷区野沢 1-29-12</p>
           <p class="section__text">東急田園都市線三軒茶屋駅より徒歩xx分</p>
         </div>
-        <div class="section__imgWrapper">
-          <div class="google-map">
-            <iframe class="google-map__map" src="https://www.google.com/maps/d/embed?mid=1bgYTbrPGpXKOrS0LwmEQ6ZpqJN3xAH9z" width="640" height="480"></iframe>
+        <div class="section__content section__content--horizontal">
+          <div class="section__imgWrapper">
+            <div class="google-map">
+              <iframe class="google-map__map" src="https://www.google.com/maps/d/embed?mid=1bgYTbrPGpXKOrS0LwmEQ6ZpqJN3xAH9z" width="640" height="480"></iframe>
+            </div>
           </div>
         </div>
       </section>

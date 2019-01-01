@@ -1,4 +1,8 @@
 .contact-form {
+  @include mq() {
+    margin: 0 auto;
+    max-width: 600px;
+  }
   &__list {
     margin-bottom: 40px;
   }
