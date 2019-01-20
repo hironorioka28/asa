@@ -31,7 +31,7 @@ Template Name: Contact
         <div class="section__content">
           <div class="section__imgWrapper section__imgWrapper--map">
             <div class="google-map">
-              <iframe class="google-map__map" width="860" height="500" src="http://maps.google.co.jp/maps?&output=embed&q=東京都世田谷区野沢1-29-12-A&iwloc=A"></iframe>
+              <iframe class="google-map__map" width="860" height="500" src="http://maps.google.co.jp/maps?&output=embed&q=東京都世田谷区野沢1-29-12-A&z=16&ll=35.6386306,139.6711704" allowfullscreen></iframe>
             </div>
           </div>
         </div>
