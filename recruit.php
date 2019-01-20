@@ -87,8 +87,7 @@ Template Name: Recruit
         </div>
         <h3 class="section__title section__title--sub">履歴書等送付先</h3>
         <div class="section__content">
-          <p class="section__text">〒xxx-xxxx 東京都世田谷区野沢 1-29-12
-ああああああああああああああああああああああああああああ</p>
+          <p class="section__text">〒154-0003 東京都世田谷区野沢1-29-12-A</p>
         </div>
         <div class="section__content section__content--centering">
           <a class="button" href="/contact/?val=その他のお問い合わせ">その他のお問い合わせ</a>
