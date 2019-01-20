@@ -26,7 +26,9 @@ Template Name: Contact
         <h2 class="section__title">アクセス</h2>
         <div class="section__content">
           <p class="section__text">鈴木啓 / ASA エーエスエーアソシエイツ</p>
-          <p class="section__text">〒154-0003 東京都世田谷区野沢1-29-12-A</p>
+          <p class="section__text">
+            <a class="section__link" href="https://goo.gl/maps/QDGiN7hWoss" target="_blank">〒154-0003 東京都世田谷区野沢1-29-12-A</a>
+        </p>
         </div>
         <div class="section__content">
           <div class="section__imgWrapper section__imgWrapper--map">
