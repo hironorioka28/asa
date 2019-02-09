@@ -29,12 +29,17 @@ add_filter('widget_text', 'do_shortcode');
 
 // URLの自動補完リダイレクトを無効にする
 function disable_redirect_canonical( $redirect_url ) {
-  $pattern = '/\/paged\//';
+  $pattern = '/paged/';
   preg_match($pattern, $redirect_url, $matches);
 
   if( is_404() ) {
     return false;
   }
-  return $redirect_url;
+
+  if ($matches){
+    //リクエストURLに「/page/」があれば、リダイレクトしない。
+    $redirect_url = false;
+    return $redirect_url;
+  }
 }
 add_filter( 'redirect_canonical', 'disable_redirect_canonical' );
