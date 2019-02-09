@@ -15,14 +15,14 @@
       </h1>
       <nav class="header__nav">
         <ul class="header-nav-list">
-          <li class="header-nav-list__item<?php if (is_home()): ?> header-nav-list__item--active<?php endif; ?>">
-            <a class="header-nav-list__link" href="/">Home</a>
+          <li class="header-nav-list__item<?php if (is_category('works')): ?> header-nav-list__item--active<?php endif; ?>">
+            <a class="header-nav-list__link" href="/works">Works</a>
           </li>
           <li class="header-nav-list__item<?php if (is_category('news')): ?> header-nav-list__item--active<?php endif; ?>">
             <a class="header-nav-list__link" href="/news">News</a>
           </li>
           <li class="header-nav-list__item<?php if (is_page('About us')): ?> header-nav-list__item--active<?php endif; ?>">
-            <a class="header-nav-list__link" href="/about">About us</a>
+            <a class="header-nav-list__link" href="/about">About</a>
           </li>
           <li class="header-nav-list__item<?php if (is_page('Recruit')): ?> header-nav-list__item--active<?php endif; ?>">
             <a class="header-nav-list__link" href="/recruit">Recruit</a>

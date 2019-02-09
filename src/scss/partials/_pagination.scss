@@ -1,0 +1,50 @@
+/*
+* Override default WordPress style
+*/
+
+.pagination {
+  .nav-links {
+    display: flex;
+  }
+  .page-numbers {
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+    padding: 0 4px;
+    min-width: 28px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $gray-d;
+    &.dots {
+      border: none;
+    }
+    &.current {
+      font-weight: 700;
+      border-color: $black-text;
+    }
+    &.prev {
+      &::after {
+        content: "\f104";
+        font: {
+          family: "Font Awesome 5 Free";
+          weight: 900;
+        }
+      }
+    }
+    &.next {
+      &::after {
+        content: "\f105";
+        font: {
+          family: "Font Awesome 5 Free";
+          weight: 900;
+        }
+      }
+    }
+  }
+}
+
+.screen-reader-text {
+  display: none;
+}

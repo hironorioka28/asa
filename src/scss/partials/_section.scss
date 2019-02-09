@@ -129,4 +129,8 @@
       }
     }
   }
+  &__link {
+    border-bottom: 1px solid $gray-d;
+    color: $gray-dd;
+  }
 }

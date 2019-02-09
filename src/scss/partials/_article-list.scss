@@ -6,6 +6,18 @@
   &__link {
     display: block;
     padding: 16px 0;
+    &--hasImg {
+      display: flex;
+    }
+  }
+  &__client {
+    margin-top: 8px;
+    font: {
+      size: 1.2rem;
+      weight: 400;
+    }
+    color: $gray-dd;
+    line-height: 1.2;
   }
   &__date {
     margin-bottom: 16px;
@@ -13,13 +25,32 @@
       size: 1.2rem;
       weight: 400;
     }
-    color: $black-text;
+    color: $gray-dd;
     line-height: 1;
     @include mq() {
-      font: j{
+      font: {
         size: 1.4rem;
       }
     }
+    &--type-works {
+      margin: 8px 0 0 0;
+      @include mq() {
+        font: {
+          size: 1.2rem;
+        }
+      }
+    }
+  }
+  &__imgWrapper {
+    margin-right: 16px;
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   &__title {
     font: {
