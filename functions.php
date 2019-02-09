@@ -29,7 +29,7 @@ add_filter('widget_text', 'do_shortcode');
 
 // URLの自動補完リダイレクトを無効にする
 function disable_redirect_canonical( $redirect_url ) {
-  $pattern = '/\/page\//';
+  $pattern = '/\/paged\//';
   preg_match($pattern, $redirect_url, $matches);
 
   if( is_404() ) {
