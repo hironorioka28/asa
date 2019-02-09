@@ -26,3 +26,12 @@ register_sidebar(array(
 
 //ウィジェットでショートコードを使えるようにする
 add_filter('widget_text', 'do_shortcode');
+
+// URLの自動補完リダイレクトを無効にする
+function disable_redirect_canonical( $redirect_url ) {
+  if( is_404() ) {
+    return false;
+  }
+  return $redirect_url;
+}
+add_filter( 'redirect_canonical', 'disable_redirect_canonical' );
