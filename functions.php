@@ -37,7 +37,7 @@ function disable_redirect_canonical( $redirect_url ) {
   }
 
   if ($matches){
-    //リクエストURLに「/page/」があれば、リダイレクトしない。
+    //リクエストURLに「paged」があれば、リダイレクトしない。
     $redirect_url = false;
     return $redirect_url;
   }
